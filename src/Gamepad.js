@@ -235,7 +235,8 @@ class Gamepad extends React.Component {
   }
 
   render() {
-    return React.Children.only(this.props.children)
+    let children = this.props.children;
+    return children ? children : React.Fragment;
   }
 }
 
